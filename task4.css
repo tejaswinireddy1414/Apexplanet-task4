@@ -1,0 +1,517 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    width:100%;
+    background:#0f172a;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links li a:hover{
+    color:#38bdf8;
+}
+
+/* Home */
+
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 10%;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+}
+
+.home-content{
+    width:55%;
+}
+
+.home-content h1{
+    font-size:55px;
+}
+
+.home-content span{
+    color:#ffd700;
+}
+
+.home-content h3{
+    margin:20px 0;
+    font-size:28px;
+}
+
+.home-content p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#ffd700;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+.home-image{
+    width:35%;
+    text-align:center;
+}
+
+.home-image img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    border:8px solid white;
+    object-fit:cover;
+    box-shadow:0 0 25px rgba(255,255,255,.5);
+}
+
+/* About */
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:35px;
+    color:#2563eb;
+}
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* Skills */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card i{
+    font-size:55px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.skill-card h3{
+    font-size:22px;
+}
+
+/* Projects */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:scale(1.05);
+}
+
+.project-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+/* ===========================
+   TO-DO LIST
+=========================== */
+
+.todo-container{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.todo-container input{
+    width:70%;
+    padding:14px;
+    border:2px solid #2563eb;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+}
+
+.todo-container button{
+    padding:14px 25px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:10px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.todo-container button:hover{
+    background:#1d4ed8;
+}
+
+#taskList{
+    margin-top:30px;
+    list-style:none;
+}
+
+#taskList li{
+    background:white;
+    padding:15px;
+    margin:12px 0;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:darkred;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+form{
+    max-width:650px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:50px;
+}
+
+footer p{
+    margin-bottom:15px;
+}
+
+.social-icons a{
+    color:white;
+    font-size:28px;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+}
+
+.nav-links li{
+    margin:10px 0;
+}
+
+.home{
+    flex-direction:column;
+    text-align:center;
+}
+
+.home-content{
+    width:100%;
+}
+
+.home-image{
+    width:100%;
+    margin-top:40px;
+}
+
+.home-image img{
+    width:250px;
+    height:250px;
+}
+
+.home-content h1{
+    font-size:38px;
+}
+
+.home-content h3{
+    font-size:22px;
+}
+
+.todo-container input{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.todo-container button{
+    width:100%;
+    margin-left:0;
+}
+
+section{
+    padding:60px 7%;
+}
+}
+
+/* ===========================
+   SIMPLE ANIMATION
+=========================== */
+
+.skill-card,
+.project-card{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+/* ===========================
+   PRODUCT LISTING
+=========================== */
+
+#products{
+    background:#f8f9fa;
+    padding:80px 10%;
+}
+
+.product-controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.product-controls label{
+    font-weight:bold;
+    color:#333;
+}
+
+.product-controls select{
+    padding:10px;
+    border:2px solid #2563eb;
+    border-radius:6px;
+    font-size:16px;
+    outline:none;
+    cursor:pointer;
+}
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:180px;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.product-card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.product-card p{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.product-card h4{
+    color:#e63946;
+    margin-bottom:15px;
+}
+
+.product-card button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product-card button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   RESPONSIVE PRODUCT SECTION
+=========================== */
+
+@media(max-width:768px){
+
+.product-controls{
+    flex-direction:column;
+}
+
+.product-controls select{
+    width:100%;
+}
+
+.product-card img{
+    width:100%;
+    height:180px;
+}
+
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Tejaswini Reddy | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2 class="logo">Portfolio</h2>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#todo">To-Do</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section id="home" class="home">
+
+<div class="home-content">
+
+<h1>Hello, I'm <span>Tejaswini Reddy</span></h1>
+
+<h3>Computer Science Engineering Student</h3>
+
+<p>
+
+Passionate about Front-End Web Development and
+building responsive websites using HTML, CSS and JavaScript.
+
+</p>
+
+<a href="#projects" class="btn">
+
+View My Work
+
+</a>
+
+</div>
+
+<div class="home-image">
+
+<img src="profile.jpg"
+alt="Profile">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am currently pursuing B.Tech in Computer Science and Engineering.
+
+I enjoy solving programming problems and creating responsive websites.
+
+My goal is to become a Software Engineer.
+
+</p>
+
+</section>
+<!-- =======================
+     SKILLS SECTION
+======================= -->
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill-card">
+<i class="fa-brands fa-html5"></i>
+<h3>HTML</h3>
+<p>Building semantic and responsive web pages.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-css3-alt"></i>
+<h3>CSS</h3>
+<p>Creating attractive layouts using Flexbox, Grid and animations.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-js"></i>
+<h3>JavaScript</h3>
+<p>Adding interactivity, validation and dynamic content.</p>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-github"></i>
+<h3>Git & GitHub</h3>
+<p>Version control and project hosting.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+     PROJECTS SECTION
+======================= -->
+
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<h3>Task 1</h3>
+
+<p>
+Responsive Landing Page developed using HTML and CSS.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Task 2</h3>
+
+<p>
+Responsive Contact Form with JavaScript Validation and Interactive To-Do List.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Task 3</h3>
+
+<p>
+Interactive Quiz Application with Random Joke API Integration.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Task 4</h3>
+
+<p>
+Personal Portfolio Website with To-Do List and Product Listing.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+     TO-DO LIST
+======================= -->
+
+<section id="todo">
+
+<h2>My To-Do List</h2>
+
+<div class="todo-container">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter a task">
+
+<button onclick="addTask()">
+
+Add Task
+
+</button>
+
+<ul id="taskList">
+
+</ul>
+
+</div>
+
+</section>
+<!-- =======================
+     PRODUCT LISTING
+======================= -->
+
+<section id="products">
+
+<h2>Product Listing</h2>
+
+<div class="product-controls">
+
+<label>Filter by Category:</label>
+
+<select id="categoryFilter" onchange="filterProducts()">
+
+<option value="all">All</option>
+
+<option value="electronics">Electronics</option>
+
+<option value="books">Books</option>
+
+<option value="accessories">Accessories</option>
+
+</select>
+
+<label>Sort by Price:</label>
+
+<select id="sortPrice" onchange="sortProducts()">
+
+<option value="default">Default</option>
+
+<option value="low">Low to High</option>
+
+<option value="high">High to Low</option>
+
+</select>
+
+</div>
+
+<div id="productContainer" class="product-container">
+
+<div class="product-card" data-category="electronics" data-price="65000">
+
+<img src="https://via.placeholder.com/180x150?text=Laptop" alt="Laptop">
+
+<h3>Laptop</h3>
+
+<p>Category: Electronics</p>
+
+<h4>₹65,000</h4>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product-card" data-category="electronics" data-price="18000">
+
+<img src="https://via.placeholder.com/180x150?text=Mobile" alt="Mobile">
+
+<h3>Mobile</h3>
+
+<p>Category: Electronics</p>
+
+<h4>₹18,000</h4>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product-card" data-category="books" data-price="550">
+
+<img src="https://via.placeholder.com/180x150?text=Java+Book" alt="Java Book">
+
+<h3>Java Book</h3>
+
+<p>Category: Books</p>
+
+<h4>₹550</h4>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product-card" data-category="books" data-price="450">
+
+<img src="https://via.placeholder.com/180x150?text=HTML+Book" alt="HTML Book">
+
+<h3>HTML & CSS Book</h3>
+
+<p>Category: Books</p>
+
+<h4>₹450</h4>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product-card" data-category="accessories" data-price="999">
+
+<img src="https://via.placeholder.com/180x150?text=Keyboard" alt="Keyboard">
+
+<h3>Keyboard</h3>
+
+<p>Category: Accessories</p>
+
+<h4>₹999</h4>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product-card" data-category="accessories" data-price="1500">
+
+<img src="https://via.placeholder.com/180x150?text=Headphones" alt="Headphones">
+
+<h3>Headphones</h3>
+
+<p>Category: Accessories</p>
+
+<h4>₹1,500</h4>
+
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+     CONTACT
+======================= -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<textarea
+rows="6"
+placeholder="Your Message"
+required>
+</textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<!-- =======================
+     FOOTER
+======================= -->
+
+<footer>
+
+<p>
+
+© 2026 Tejaswini Reddy | All Rights Reserved
+
+</p>
+
+<div class="social-icons">
+
+<a href="https://github.com/yourusername" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a href="https://linkedin.com/in/yourusername" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="mailto:yourmail@example.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+</div>
+
+</footer>
+
+<script src="task4.js"></script>
+
+</body>
+</html>
